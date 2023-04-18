@@ -48,33 +48,33 @@ round-avatar: true
 # Select the social network links that you want to show in the footer.
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
-    email: "someone@example.com"
+    email: "oliver.tj@protonmail.com"
     rss: true # remove this line if you don't want to show an RSS link at the bottom
-    facebook: deanattali
-    github: daattali
-    twitter: daattali
-    patreon: DeanAttali
-    youtube: c/daattali
-#  medium: yourname
-#  reddit: yourname
-#  linkedin: daattali
-#  xing: yourname
-#  stackoverflow: "3943160/daattali"
-#  snapchat: deanat78
-#  instagram: deanat78
-#  spotify: yourname
-#  telephone: +14159998888
-#  steam: deanat78
-#  twitch: yourname
-#  yelp: yourname
-#  telegram: yourname
-#  calendly: yourname
-#  mastodon: instance.url/@username
-#  ORCID: your ORCID ID
-#  google-scholar: your google scholar
-#  discord: invite/invite_code or users/userid
-#  kaggle: yourname
-#  hackerrank: yourname
+    github: LoreviQ
+    linkedin: Oliver Jay
+    #  telephone: +14159998888
+    #  facebook: deanattali
+    #  twitter: daattali
+    #  patreon: DeanAttali
+    #  youtube: c/daattali
+    #  medium: yourname
+    #  reddit: yourname
+    #  xing: yourname
+    #  stackoverflow: "3943160/daattali"
+    #  snapchat: deanat78
+    #  instagram: deanat78
+    #  spotify: yourname
+    #  steam: deanat78
+    #  twitch: yourname
+    #  yelp: yourname
+    #  telegram: yourname
+    #  calendly: yourname
+    #  mastodon: instance.url/@username
+    #  ORCID: your ORCID ID
+    #  google-scholar: your google scholar
+    #  discord: invite/invite_code or users/userid
+    #  kaggle: yourname
+    #  hackerrank: yourname
 
 # If you want your website to generate an RSS feed, provide a description
 # The URL for the feed will be https://<your_website>/feed.xml
@@ -128,12 +128,12 @@ navbar-col: "##1C1D21"
 navbar-text-col: "#FFFFFF"
 navbar-border-col: "#DDDDDD"
 #page-col: "#FFFFFF"
-text-col: "#404040"
-link-col: "#008AFF"
+text-col: "#FFFFFF"
+link-col: "#FFFFFF"
 hover-col: "#0085A1"
 footer-col: "#1C1D21"
 footer-text-col: "#FFFFFF"
-footer-link-col: "#404040"
+footer-link-col: "#FFFFFF"
 footer-hover-col: "#0085A1"
 
 # Alternatively, the navbar, footer, and page background can be set to an image
