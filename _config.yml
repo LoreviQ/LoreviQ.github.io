@@ -51,7 +51,7 @@ social-network-links:
     email: "oliver.tj@protonmail.com"
     rss: true # remove this line if you don't want to show an RSS link at the bottom
     github: LoreviQ
-    linkedin: Oliver Jay
+    linkedin: oliver-j-1b8501b5
     #  telephone: +14159998888
     #  facebook: deanattali
     #  twitter: daattali
@@ -124,10 +124,10 @@ navbar-var-length: false
 
 # Personalize the colours in your website. Colour values can be any valid CSS colour
 
-navbar-col: "##1C1D21"
+navbar-col: "#1C1D21"
 navbar-text-col: "#FFFFFF"
 navbar-border-col: "#DDDDDD"
-#page-col: "#FFFFFF"
+page-col: "#FFFFFF"
 text-col: "#FFFFFF"
 link-col: "#FFFFFF"
 hover-col: "#0085A1"
