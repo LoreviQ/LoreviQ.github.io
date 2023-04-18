@@ -87,7 +87,7 @@ rss-description: This website is a virtual proof that I'm awesome
 # Select which social network share links to show in posts
 share-links-active:
     twitter: true
-    facebook: true
+    facebook: false
     linkedin: true
     vk: false
 
@@ -132,9 +132,9 @@ text-col: "#FFFFFF"
 link-col: "#FFFFFF"
 hover-col: "#0085A1"
 footer-col: "#1C1D21"
-footer-text-col: "#FFFFFF"
+footer-text-col: "#527F3F"
 footer-link-col: "#FFFFFF"
-footer-hover-col: "#0085A1"
+footer-hover-col: "#FE544C"
 
 # Alternatively, the navbar, footer, and page background can be set to an image
 # instead of colour
