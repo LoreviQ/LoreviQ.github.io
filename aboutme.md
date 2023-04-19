@@ -8,7 +8,7 @@ I'm a highly skilled and accomplished Computer Science graduate with experience 
 
 ### Employment History
 
-2021 - 2022 (15 Months): The Curve Group (https://www.thecurvegroup.co.uk/)
+# 2021 - 2022 (15 Months): The Curve Group (https://www.thecurvegroup.co.uk/)
 
 -   Officially employed as a Data Analyst, though I had a variety of responsibilities in this position.
 -   Set up and managed the primary database used by the company (Microsoft Dataverse), managing dataflows and API calls so that data from external platforms was automatically imported.
@@ -19,14 +19,20 @@ I'm a highly skilled and accomplished Computer Science graduate with experience 
 
 ### Education and Qualifications
 
-2019 - 2021: Royal Holloway University of London, Egham Hill, Egham TW20 0EX
+# 2019 - 2021: Royal Holloway University of London, Egham Hill, Egham TW20 0EX
 
 -   Bachelors of Computer Science (First Class)
-    2016 - 2019: University of Birmingham, Edgbaston, Birmingham, B15 2TT
+
+# 2016 - 2019: University of Birmingham, Edgbaston, Birmingham, B15 2TT
+
 -   Diploma of Higher Education in Physics
-    2014 - 2016: Space Studio Banbury, Banbury, Oxfordshire, OX16 9HY
+
+# 2014 - 2016: Space Studio Banbury, Banbury, Oxfordshire, OX16 9HY
+
 -   A Levels: Maths (A\*), Further Maths (A), Physics (A)
-    2009 - 2014: Chenderit School, Middleton Cheney, Oxfordshire, OX17 2QR
+
+# 2009 - 2014: Chenderit School, Middleton Cheney, Oxfordshire, OX17 2QR
+
 -   GCSEs: 7 A and A\* including Maths, Further Maths and English. 13 total passing grades.
 -   Additional Maths (A) - FSMQ
 -   Extended Project (A) - Level 3 Qualification
