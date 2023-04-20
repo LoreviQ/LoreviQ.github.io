@@ -36,3 +36,23 @@ I'm a highly skilled and accomplished Computer Science graduate with experience 
 -   GCSEs: 7 A and A\* including Maths, Further Maths and English. 13 total passing grades.
 -   Additional Maths (A) - FSMQ
 -   Extended Project (A) - Level 3 Qualification
+
+### Skills
+
+-   Strong programming ability. Experience with:
+    -   JavaScript which was the primary programming language used in my employment at The Curve Group, where I made extensive modifications to Microsoft Dynamics.
+    -   Python which I used for physics/maths scripts, and for programming machine learning algorithms
+    -   Java and C which I used for a variety of programming projects while at university
+-   Familiarity with a wide range of operating systems used for both work and personal use. I use a mixture of Windows and Linux on my personal machine, and have a variety of Virtual machines with different implementations of Linux which I use for work.
+-   Experience with a wide range of cyber-security topics due to attending summer Cyberfirst academies, such as networking, different operating systems and their security, cryptography, OSINT and more.
+-   Excellent problem solving ability, with experience in physics problem solving for university and programming problems as a hobby.
+-   Exceptional presentation skills. Presenting projects in front of an audience is something I’ve had to do many times at university and is one of my strengths. At The Curve Group I frequently had to present the status of projects to the COO and heads of relevant parts of the business.
+-   The ability to self manage, organise and research independently. This was imperative at The Curve Group since we were a small self-managed team; as well as necessary for keeping up with university work and my own projects.
+-   Strong ability for team working, experienced in working in a small team to manage projects and when I represented my school at the UK Maths Challenge team competition.
+
+### Interests and Achievements
+
+Particularly interested in machine learning, I performed my final year project on analysis of machine learning algorithms and achieved the highest grade.
+Interests in a wide range of technologies, from AI, cloud computing, different operating systems, networking and encryption.
+Achieved Chief Scout's Gold Award
+Achieved UK Maths Challenge Gold Award - Best in School
