@@ -1,8 +1,7 @@
 ---
 layout: post
 title: Enhancing Web Development with ChatGPT
-subtitle: Each post also has a subtitle
-tags: [test]
+tags: [tech]
 comments: true
 ---
 
