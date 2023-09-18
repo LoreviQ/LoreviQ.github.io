@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Enhancing Web Development with ChatGPT
-tags: [tech]
+tags: [tech, blog]
 comments: true
 ---
 
