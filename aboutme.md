@@ -39,16 +39,33 @@ I'm a highly skilled and accomplished Computer Science graduate with experience 
 
 ### Skills
 
--   Strong programming ability. Experience with:
-    -   JavaScript which was the primary programming language used in my employment at The Curve Group, where I made extensive modifications to Microsoft Dynamics.
-    -   Python which I used for physics/maths scripts, and for programming machine learning algorithms
-    -   Java and C which I used for a variety of programming projects while at university
--   Familiarity with a wide range of operating systems used for both work and personal use. I use a mixture of Windows and Linux on my personal machine, and have a variety of Virtual machines with different implementations of Linux which I use for work.
--   Experience with a wide range of cyber-security topics due to attending summer Cyberfirst academies, such as networking, different operating systems and their security, cryptography, OSINT and more.
--   Excellent problem solving ability, with experience in physics problem solving for university and programming problems as a hobby.
--   Exceptional presentation skills. Presenting projects in front of an audience is something I’ve had to do many times at university and is one of my strengths. At The Curve Group I frequently had to present the status of projects to the COO and heads of relevant parts of the business.
--   The ability to self manage, organise and research independently. This was imperative at The Curve Group since we were a small self-managed team; as well as necessary for keeping up with university work and my own projects.
--   Strong ability for team working, experienced in working in a small team to manage projects and when I represented my school at the UK Maths Challenge team competition.
+- **Programming Proficiency**:
+    - **JavaScript**: Primary programming language used during my employment at The Curve Group, where I made extensive modifications to Microsoft Dynamics.
+    - **Python**: Utilized for physics/maths scripts and for developing machine learning algorithms.
+    - **Java and C**: Applied to various programming projects during my university studies.
+    - **Golang**: Used in a recent personal project to create a server for an API, interfacing with an SQLite database.
+    - **React**: Developed a modern frontend to access the API, showcasing proficiency in building dynamic user interfaces.
+
+- **DevOps and Deployment**:
+    - **CI/CD**: Implemented continuous integration and continuous deployment pipelines in my recent project, demonstrating automated testing and deployment to Google Cloud Platform.
+
+- **Operating Systems**:
+    - Experienced with a wide range of operating systems for both work and personal use. Utilized Windows and Linux on my personal machine, and maintained various virtual machines with different Linux distributions for work purposes.
+
+- **Cyber-Security**:
+    - Gained extensive knowledge in cyber-security topics through summer CyberFirst academies, covering networking, operating systems security, cryptography, OSINT, and more.
+
+- **Problem Solving**:
+    - Demonstrated excellent problem-solving skills in both physics problems at university and programming challenges as a hobby.
+
+- **Presentation Skills**:
+    - Proven ability to present projects effectively in front of an audience. At The Curve Group, regularly presented project statuses to the COO and department heads.
+
+- **Self-Management and Research**:
+    - Strong ability to self-manage, organize, and conduct independent research. Essential in my role at The Curve Group within a small self-managed team, and for managing university work and personal projects.
+
+- **Teamwork**:
+    - Experienced in working collaboratively in small teams to manage projects. Represented my school at the UK Maths Challenge team competition, demonstrating strong team-working capabilities.
 
 ### Interests and Achievements
 
