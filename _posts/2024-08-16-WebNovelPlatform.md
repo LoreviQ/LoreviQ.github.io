@@ -92,3 +92,10 @@ The api contains two internal package, 'auth' and 'database'.
 ### Testing
 
 I write tests for handlers before writing them, testing the expected functionality of the various endpoints. Tests can be seen in the main package with *_test.go format, using go test. 
+
+## Database
+
+The Database uses libsql, a fork of SQLite hosted by [Turso](https://turso.tech/), who I picked for their generous free plan since this is currently just a demonstration project. Migration is handled by goose, allowing me to migrate up and down between different schema. As mentioned previously, interaction via the database is handled with SQLC, where Go code is generated from SQL wirrten in the ./sql/queries directory.
+
+## Frontend
+
