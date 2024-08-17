@@ -7,7 +7,9 @@ comments: false
 
 [Github Link](https://github.com/LoreviQ/WebNovelPlatform)
 
-This project is meant to be a comprehensive vertical slice demonstrating a range of my technicaly ability. The idea was to create a platform to share and host written works, since I have a personal interest in writing. An example of the project can be accessed here: [https://webnovelclient-y5hewbdc4a-nw.a.run.app/](https://webnovelclient-y5hewbdc4a-nw.a.run.app/). It is hosted on GCP at the minimum possible level (since it's just for demonstration purposes) so please bear in mind in can sometimes be slow fetching data, this isn't a problem with the code but with the server! Feel free to test making an account and interacting with the site.
+This project is meant to be a comprehensive vertical slice demonstrating a range of my technicaly ability. The idea was to create a platform to share and host written works, since I have a personal interest in writing. An example of the project can be accessed here: [https://webnovelclient-y5hewbdc4a-nw.a.run.app/](https://webnovelclient-y5hewbdc4a-nw.a.run.app/). 
+
+It is hosted on GCP at the minimum possible level (since it's just for demonstration purposes) so please bear in mind in can sometimes be slow fetching data, this isn't a problem with the code but with the server! Feel free to test making an account and interacting with the site.
 
 ## The project demonstrates
   - An API backend made with Go
