@@ -1,6 +1,6 @@
 ---
 layout: post
-title: WebNovelClient - A flexible service for hosting written works
+title: WebNovelClient: Building a Scalable Platform for Hosting and Sharing Written Works
 tags: [go, javascript, api, react, ci/cd]
 comments: false
 ---
