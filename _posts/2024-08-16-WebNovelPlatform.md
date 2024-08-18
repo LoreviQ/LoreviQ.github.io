@@ -162,4 +162,4 @@ The app displays a range of features, such as responsive design, dark/light mode
 
 The project uses GitHub actions to constantly check my code. 
 
-Continuous Integration (CI) is automated through GitHub Actions, which run on every pull request to the main branch. The process includes running tests (go test -cover) and performing security checks (gosec). Continuous Deployment (CD) is triggered upon successful CI completion, automatically deploying the latest builds to GCP." 
+Continuous Integration (CI) is automated through GitHub Actions, which run on every pull request to the main branch. The process includes running tests (go test -cover) and performing security checks (gosec). Continuous Deployment (CD) is triggered upon successful CI completion, automatically deploying the latest builds to GCP.
