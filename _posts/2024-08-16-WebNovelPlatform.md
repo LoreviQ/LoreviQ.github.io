@@ -71,6 +71,58 @@ In building WebNovelClient, I chose a combination of modern technologies and met
 #### Summary of Technology Choices
 Each technology and tool used in WebNovelClient was chosen with a balance of learning opportunities, research into industry best practices, and budget considerations in mind. Together, they contribute to a robust, maintainable, and scalable application that serves as a testament to my development skills and adaptability.
 
+## Deployment Architecture Overview
+
+WebNovelClient is composed of three main components: the frontend client, the backend API, and the database. Each of these components is deployed and managed in a way that ensures smooth interaction and efficient data handling.
+
+- **Frontend (React App):**  
+  The frontend client is built with React and hosted on Google Cloud Platform (GCP). It serves as the user interface, allowing users to interact with the platform. The client makes HTTP requests to the backend API to fetch or submit data.
+
+- **Backend (API):**  
+  The API is developed in Go and is also hosted on GCP. It acts as the intermediary between the frontend client and the database. When the frontend makes a request, the API processes it, interacts with the database if needed, and returns the appropriate response to the client. This includes handling user authentication, managing content, and generating signed URLs for image uploads.
+
+- **Database (Turso with libSQL):**  
+  The database is hosted on Turso and uses libSQL, a fork of SQLite. It stores all the essential data, such as user information, written works, and metadata about the images. However, due to the limitations of SQLite, images themselves are not stored directly in the database.
+
+- **Image Storage (GCP Cloud Storage):**  
+  For image storage, GCP’s Cloud Storage is used. When a user uploads an image, the following process occurs:
+  1. The frontend client sends a request to the API indicating that an image needs to be uploaded.
+  2. The API generates a signed URL from GCP Cloud Storage and returns it to the client.
+  3. The client uploads the image directly to the GCP bucket using the signed URL.
+  4. The client then sends the image URL back to the API, which stores this URL in the database.
+
+#### Visualizing the Architecture
+
+Here’s a simplified diagram of the deployment architecture:
+
+    [Frontend Client (React)]  <-->  [Backend API (Go)]  <-->  [Database (Turso, libSQL)]
+        |                                      |
+        |                                      |
+        +--> [GCP Cloud Storage (Images)] <---+
+    
+- **Flow of Data:**
+  - **Frontend to Backend:** The client sends requests (e.g., user data, content) to the API.
+  - **Backend to Database:** The API interacts with the database to retrieve or store data.
+  - **Backend to GCP Cloud Storage:** For image uploads, the API generates a signed URL and facilitates image storage.
+
+This architecture ensures that the platform is modular, scalable, and able to handle various data types efficiently. Hosting both the frontend and backend on GCP simplifies deployment and integration, while using Turso for the database and GCP Cloud Storage for images balances cost with functionality.
+
+#### Scalability and Future-Proofing with Separate API and Client
+
+Splitting the frontend client and backend API into distinct components provides significant advantages for scalability and resource management. This separation allows each component to be scaled independently based on its specific needs and load, optimizing resource usage and performance.
+
+- **Independent Scaling:**  
+  By decoupling the frontend client from the backend API, you can scale each component independently. For example, if the API experiences increased traffic or processing demands, you can allocate additional resources specifically to the API without affecting the frontend client. Conversely, if the client side needs to handle more user interactions or load, it can be scaled separately.
+
+- **Resource Optimization:**  
+  This separation ensures that resources are utilized efficiently. You avoid the inefficiency of scaling both the client and API together when only one is under increased load. This means you can optimize costs and performance by allocating resources precisely where they are needed.
+
+- **Flexibility in Deployment:**  
+  Separate deployments allow for more flexibility. For instance, you can deploy updates or improvements to the API without requiring simultaneous updates to the client, and vice versa. This modular approach simplifies development cycles and reduces the risk of introducing bugs or downtime in unrelated parts of the application.
+
+- **Future Expansion with Kubernetes:**  
+  Although Kubernetes is not used in this demonstration project, it is a powerful tool worth considering for future iterations, especially as the project scales. Kubernetes excels in managing large-scale applications with multiple containers, offering benefits such as automated scaling, efficient resource management, seamless rollouts with automatic rollbacks, and self-healing capabilities. However, for this demonstration project, which operates with a single container, the complexity and overhead of Kubernetes would be unnecessary. Its primary advantages come into play when managing more extensive deployments, which is beyond the current scope. Nonetheless, understanding how Kubernetes could be integrated into a real-world version of the project shows a readiness to leverage advanced tools for scalable and efficient application management as the project evolves.
+
 ## Backend Development
 
 #### Main
