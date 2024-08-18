@@ -35,7 +35,7 @@ In building WebNovelClient, I chose a combination of modern technologies and met
 
 #### 3. Database Management with SQLite and Turso
 - **Why SQLite and Turso?**  
-  Turso was chosen as the cloud provider for its cost-effective hosting options, which were particularly attractive for a demonstration project. However, Turso exclusively supports `libSQL`, a fork of SQLite, which dictated my choice of database engine. While SQLite is lightweight and easy to set up, I encountered several limitations that made me wish I had used PostgreSQL instead, especially as the project grew in complexity.
+  Turso was chosen as the cloud provider for its cost-effective hosting options, which were particularly attractive for a demonstration project. However, Turso exclusively supports libSQL, a fork of SQLite, which dictated my choice of database engine. While SQLite is lightweight and easy to set up, I encountered several limitations that made me wish I had used PostgreSQL instead, especially as the project grew in complexity.
 - **Benefits:**
   - **Cost-Effectiveness:** Turso’s free tier allowed me to deploy and manage the database without incurring significant costs, which was ideal for a budget-conscious project.
   - **Simplicity:** SQLite’s serverless nature made it straightforward to implement, especially in the early stages of development. It’s self-contained, requiring minimal configuration, which suited the initial scope of the project.
@@ -162,4 +162,4 @@ The app displays a range of features, such as responsive design, dark/light mode
 
 The project uses GitHub actions to constantly check my code. 
 
-Continuous Integration (CI) is automated through GitHub Actions, which run on every pull request to the main branch. The process includes running tests (`go test -cover`) and performing security checks (gosec). Continuous Deployment (CD) is triggered upon successful CI completion, automatically deploying the latest builds to GCP." 
+Continuous Integration (CI) is automated through GitHub Actions, which run on every pull request to the main branch. The process includes running tests (go test -cover) and performing security checks (gosec). Continuous Deployment (CD) is triggered upon successful CI completion, automatically deploying the latest builds to GCP." 
