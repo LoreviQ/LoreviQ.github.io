@@ -1,28 +1,81 @@
 ---
 layout: post
 title: WebNovelClient - A flexible service for hosting written works
-tags: [go, javascript, api, node.js, ci/cd]
+tags: [go, javascript, api, react, ci/cd]
 comments: false
 ---
 
-[Github Link](https://github.com/LoreviQ/WebNovelPlatform)
+[**Github Link**](https://github.com/LoreviQ/WebNovelPlatform)
 
-This project is meant to be a comprehensive vertical slice demonstrating a range of my technicaly ability. The idea was to create a platform to share and host written works, since I have a personal interest in writing. An example of the project can be accessed here: [https://webnovelclient-y5hewbdc4a-nw.a.run.app/](https://webnovelclient-y5hewbdc4a-nw.a.run.app/). 
+WebNovelClient is a full-stack project designed to showcase my technical skills across various domains, including backend API development, frontend design, and CI/CD. Inspired by my passion for writing, I created this platform to enable users to share and host written works. 
 
-It is hosted on GCP at the minimum possible level (since it's just for demonstration purposes) so please bear in mind in can sometimes be slow fetching data, this isn't a problem with the code but with the server! Feel free to test making an account and interacting with the site.
+You can explore a live demo of the project here: [https://webnovelclient-y5hewbdc4a-nw.a.run.app/](https://webnovelclient-y5hewbdc4a-nw.a.run.app/). 
 
-## The project demonstrates
-  - An API backend made with Go
-  - The backend interacting with an SQLite Database hosted by Turso
-  - A responsive frontend made with node.js that interacts with the API backend
-  - Test Driven Development
-  - CI & CD, automatically migrating the production database and deploying latest versions to GCP after testing.
+The application is hosted on Google Cloud Platform (GCP) with minimal resources for demonstration purposes, so you may experience some latency. This is a limitation of the current server configuration, not the underlying code. Feel free to create an account and explore the platform’s features.
 
-## Backend
+## Key Technologies and Methodologies
+
+In building WebNovelClient, I chose a combination of modern technologies and methodologies to create a robust, scalable, and efficient platform. My decisions were influenced by a desire to learn new skills, research on industry standards, and the availability of cost-effective resources. Below is an overview of the key technologies used and the rationale behind each choice:
+
+#### 1. Backend Development with Go
+- **Why Go?**  
+  Go (or Golang) was chosen for the backend due to its strong performance, simplicity, and concurrency model. Known for its efficiency, Go is particularly well-suited for building high-performance web applications and APIs. Its lightweight goroutines allow for efficient management of concurrent tasks, which is ideal for handling multiple user requests simultaneously.
+- **Benefits:**
+  - **Performance:** Go's compiled nature and low-level capabilities result in fast execution times, making it an excellent choice for building APIs that need to serve data quickly.
+  - **Simplicity:** Go's syntax is straightforward, making it easier to write and maintain clean, readable code. This was important for ensuring that the codebase remains manageable as the project grows.
+  - **Strong Typing and Error Handling:** Go's strong typing system and emphasis on explicit error handling help reduce bugs and increase code reliability.
+
+#### 2. Frontend Development with React
+- **Why React?**  
+  React was selected for the frontend due to its component-based architecture, which promotes reusability and modularity. React's popularity and active community also mean that there are abundant resources and libraries available to extend its functionality.
+- **Benefits:**
+  - **Component-Based Architecture:** React's component-based structure allowed me to build reusable UI components, which made development more efficient and the application more maintainable.
+  - **Virtual DOM:** React's Virtual DOM optimizes updates to the user interface, ensuring a smooth and responsive user experience, even in complex applications.
+  - **Rich Ecosystem:** React's vast ecosystem of tools and libraries enabled me to implement features like routing, state management, and theming with ease.
+
+#### 3. Database Management with SQLite and Turso
+- **Why SQLite and Turso?**  
+  Turso was chosen as the cloud provider for its cost-effective hosting options, which were particularly attractive for a demonstration project. However, Turso exclusively supports `libSQL`, a fork of SQLite, which dictated my choice of database engine. While SQLite is lightweight and easy to set up, I encountered several limitations that made me wish I had used PostgreSQL instead, especially as the project grew in complexity.
+- **Benefits:**
+  - **Cost-Effectiveness:** Turso’s free tier allowed me to deploy and manage the database without incurring significant costs, which was ideal for a budget-conscious project.
+  - **Simplicity:** SQLite’s serverless nature made it straightforward to implement, especially in the early stages of development. It’s self-contained, requiring minimal configuration, which suited the initial scope of the project.
+- **Challenges:**
+  - **Limitations of SQLite:** As the project progressed, I encountered challenges with SQLite’s limited concurrency support and lack of advanced features like complex querying and indexing, which PostgreSQL could have handled more efficiently.
+  - **Provider Constraints:** My choice of Turso as a cloud provider limited my database options to libSQL, which, while functional, didn’t meet all the needs of the project as it scaled.
+
+#### 4. CI/CD with GitHub Actions
+- **Why GitHub Actions?**  
+  GitHub Actions was chosen for Continuous Integration (CI) and Continuous Deployment (CD) due to its deep integration with GitHub repositories, ease of setup, and extensive community support.
+- **Benefits:**
+  - **Automated Testing and Deployment:** GitHub Actions enabled me to automate the testing and deployment process, ensuring that only tested and verified code is deployed to production. This reduces the risk of introducing bugs and keeps the application stable.
+  - **Scalability:** As the project grows, GitHub Actions can easily scale to accommodate more complex workflows, such as multi-environment deployments or integration with other services.
+  - **Cost-Effectiveness:** GitHub Actions provides a generous free tier, which allowed me to implement CI/CD without additional costs, keeping the project within budget.
+
+#### 5. Test-Driven Development (TDD)
+- **Why TDD?**  
+  I implemented Test-Driven Development to ensure that the code is reliable and that new features do not break existing functionality. By writing tests before the actual code, I was able to clearly define the expected behavior of each component and function.
+- **Benefits:**
+  - **Code Reliability:** TDD helped catch bugs early in the development process, reducing the likelihood of issues in production.
+  - **Refactoring Confidence:** With a robust suite of tests in place, I could refactor the codebase confidently, knowing that any breaking changes would be detected immediately.
+  - **Documentation:** The tests themselves serve as a form of documentation, providing clear examples of how each part of the code is expected to behave.
+
+#### 6. Cloud Hosting with Google Cloud Platform (GCP)
+- **Why GCP?**  
+  Google Cloud Platform was selected for hosting the application due to its flexibility, scalability, and the availability of a generous free tier, making it an ideal choice for deploying a demonstration project.
+- **Benefits:**
+  - **Scalability:** GCP offers the ability to scale resources as needed, which is crucial for future growth and handling increased traffic.
+  - **Cost-Effectiveness:** The free tier allowed me to deploy the application without incurring significant costs, making it accessible for demonstration purposes.
+  - **Integration with CI/CD:** GCP integrates well with CI/CD pipelines, enabling seamless deployments from GitHub Actions.
+  - **Seamless Integration:** By hosting the frontend, backend API, and image uploads all within GCP, the integration between these components is simplified. GCP’s services are designed to work together seamlessly, reducing the complexity of cross-service communication and ensuring faster, more reliable interactions between the client, API, and storage.
+
+#### Summary of Technology Choices
+Each technology and tool used in WebNovelClient was chosen with a balance of learning opportunities, research into industry best practices, and budget considerations in mind. Together, they contribute to a robust, maintainable, and scalable application that serves as a testament to my development skills and adaptability.
+
+## Backend Development
 
 #### Main
 
-All the code related to my API is in the ./api folder on the github. In main, I create and serve the server, defining endpoints to be handled by my handler functions. A handler function decodes the request, performs an action, and returns a response. For example, the handler function postUser is the following:
+The API codebase is organized within the ./api folder on GitHub. The main entry point initializes and serves the server, with each endpoint managed by dedicated handler functions. A handler function decodes the request, performs an action, and returns a response. For example, the handler function postUser is the following:
 
 
     func (cfg *apiConfig) postUser(w http.ResponseWriter, r *http.Request) {
@@ -74,17 +127,17 @@ All the code related to my API is in the ./api folder on the github. In main, I 
         })
     }
 
-decodeRequest() and respondWithJSON() are helper functions defined elsewhere which decode the request into a Go struct and respond with a JSON based on a Go Struct respectively. In this cade, the main body of the handler function is responsible for actually creating the user based on the request. For postUser, it generates a hash from the provided password, then creates a database entry with the users data. Other handler functions follow a similar structure. 
+decodeRequest() and respondWithJSON() are helper functions defined elsewhere which decode the request into a Go struct and respond with a JSON body based on a Go Struct respectively. In this case, the main section of the handler function is responsible for actually creating the user based on the request. For postUser, it generates a hash from the provided password, then creates a database entry with the users data. Other handler functions follow a similar structure. 
 
 #### Internal Packages
 
 The api contains two internal package, 'auth' and 'database'. 
 
 'auth' is used for authentication purposes. It has functions that:
-  - Authenticate user by comparing passwords to saved password hash
-  - Issues Access tokens to users so that they don't need to constantly send passwords (Short duration, non-revocable)
+  - Authenticate users by comparing passwords to saved password hash
+  - Issue Access tokens to users so that they don't need to constantly send passwords (short duration, non-revocable)
   - Authenticates provided access tokens
-  - Issues Refresh tokens to users so that they can obtain more access tokens (Remember me functionality, long duration, revocable)
+  - Issue Refresh tokens to users so that they can obtain more access tokens (remember me functionality, long duration, revocable)
   - Authenticates provided refresh tokens and issues new access tokens
   - Revoke refresh tokens
   - Manage the generation of unique url-safe ids to be used for UID purposes
@@ -93,11 +146,20 @@ The api contains two internal package, 'auth' and 'database'.
 
 #### Testing
 
-I write tests for handlers before writing them, testing the expected functionality of the various endpoints. Tests can be seen in the main package with *_test.go format, using go test. 
+I write tests for handlers before writing them, testing the expected functionality of the various endpoints. Tests can be seen in the main package with *_test.go format, executed using go test. The api is hosted at https://webnovelapi-y5hewbdc4a-nw.a.run.app (Seperate address to the client), so the endpoints can be tested independently to the client using Postman or other tools.
 
-## Database
+## Database Design and Management
 
 The Database uses libsql, a fork of SQLite hosted by [Turso](https://turso.tech/), who I picked for their generous free plan since this is currently just a demonstration project. Migration is handled by goose, allowing me to migrate up and down between different schema. As mentioned previously, interaction via the database is handled with SQLC, where Go code is generated from SQL wirrten in the ./sql/queries directory.
 
-## Frontend
+## Frontend Development
 
+The client codebase is organized within the ./client folder on GitHub. I created a react app, aiming to create a modern and responsive app that uses all the endpoints programmed in the API. I did not use any React Framework, since I wanted to use this opportunity to experiment with React and program these features myself instead of merely importing packages. 
+
+The app displays a range of features, such as responsive design, dark/light modes, authentication contexts, and interactions with my API to fetch/post data. I recommend poking around the site to fully see what I've included [https://webnovelclient-y5hewbdc4a-nw.a.run.app/](https://webnovelclient-y5hewbdc4a-nw.a.run.app/).
+
+## CI & CD
+
+The project uses GitHub actions to constantly check my code. 
+
+Continuous Integration (CI) is automated through GitHub Actions, which run on every pull request to the main branch. The process includes running tests (`go test -cover`) and performing security checks (gosec). Continuous Deployment (CD) is triggered upon successful CI completion, automatically deploying the latest builds to GCP." 
