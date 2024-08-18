@@ -125,8 +125,6 @@ Splitting the frontend client and backend API into distinct components provides 
 
 ## Backend Development
 
-#### Main
-
 The API codebase is organized within the ./api folder on GitHub. The main entry point initializes and serves the server, with each endpoint managed by dedicated handler functions. A handler function decodes the request, performs an action, and returns a response. For example, the handler function postUser is the following:
 
 
@@ -203,6 +201,49 @@ I write tests for handlers before writing them, testing the expected functionali
 ## Database Design and Management
 
 The Database uses libsql, a fork of SQLite hosted by [Turso](https://turso.tech/), who I picked for their generous free plan since this is currently just a demonstration project. Migration is handled by goose, allowing me to migrate up and down between different schema. As mentioned previously, interaction via the database is handled with SQLC, where Go code is generated from SQL wirrten in the ./sql/queries directory.
+
+#### Challenges Encountered with libSQL
+
+As the project evolved and grew in complexity, several challenges with libSQL became apparent:
+
+1. **Migration Difficulties:**
+
+  - **Reversible Migrations:** My migration strategy is designed to be reversible to facilitate easy rollback if issues arise. However, SQLite’s limitations in handling column operations posed challenges. Specifically, SQLite does not support dropping columns directly. Consequently, to drop a column, one must create a new table, copy data, and then drop the old table—a cumbersome manual process unsuitable for automated migration scripts.
+
+2. **Code Readability and Variable Management:**
+
+  - **Variable Naming Issues:** SQLite, along with SQLC, lacks support for named variables in SQL queries, which affects code readability. For instance, in the query 'GetPublishedFictions', variables are denoted by placeholders ('?'). Due to SQLite’s constraints and SQLC’s current implementation, multiple placeholders are used for the same parameter, resulting in redundant entries in the query. This limitation makes the generated code less readable and more difficult to maintain.
+
+Example of the SQL query:
+
+    -- name: GetPublishedFictions :many
+    SELECT fictions.*, users.name AS author_name
+    FROM fictions
+    JOIN users ON users.id = fictions.authorid
+    WHERE fictions.published = 1
+    AND (? IS NULL OR fictions.title LIKE '%' || ? || '%')
+    AND (? IS NULL OR users.name LIKE '%' || ? || '%')
+    AND (? IS NULL OR fictions.title LIKE '%' || ? || '%' OR users.name LIKE '%' || ? || '%')
+    LIMIT ?
+    OFFSET ?;
+
+In this query, placeholders are used repetitively, leading to code that looks like this when executed:
+
+    fictions, err := cfg.DB.GetPublishedFictions(r.Context(), database.GetPublishedFictionsParams{
+		Column1: stringParams["title"],
+		Column2: stringParams["title"],
+		Column3: stringParams["author"],
+		Column4: stringParams["author"],
+		Column5: stringParams["keyword"],
+		Column6: stringParams["keyword"],
+		Column7: stringParams["keyword"],
+		Limit:   limit,
+		Offset:  offset,
+	})
+
+The redundancy of variable names (e.g., Column1, Column2) highlights a significant drawback of the technology choices, reflecting the challenges of managing parameters efficiently in the current setup.
+
+These limitations with libSQL and SQLite necessitated workarounds and adjustments in the project’s development. While these challenges were manageable, they underscored the constraints of using SQLite for more complex querying needs. Future iterations of the project might benefit from transitioning to a more feature-rich database solution like PostgreSQL, which would address these limitations and offer enhanced capabilities.
 
 ## Frontend Development
 
