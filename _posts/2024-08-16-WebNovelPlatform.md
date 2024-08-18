@@ -76,7 +76,7 @@ Each technology and tool used in WebNovelClient was chosen with a balance of lea
 WebNovelClient is composed of three main components: the frontend client, the backend API, and the database. Each of these components is deployed and managed in a way that ensures smooth interaction and efficient data handling.
 
 - **Frontend (React App):**  
-  The frontend client is built with React and hosted on Google Cloud Platform (GCP). It serves as the user interface, allowing users to interact with the platform. The client makes HTTP requests to the backend API to fetch or submit data.
+  The frontend client is built with React and hosted on GCP. It serves as the user interface, allowing users to interact with the platform. The client makes HTTP requests to the backend API to fetch or submit data.
 
 - **Backend (API):**  
   The API is developed in Go and is also hosted on GCP. It acts as the intermediary between the frontend client and the database. When the frontend makes a request, the API processes it, interacts with the database if needed, and returns the appropriate response to the client. This includes handling user authentication, managing content, and generating signed URLs for image uploads.
