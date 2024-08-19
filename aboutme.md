@@ -4,9 +4,18 @@ title: Hi, I'm Oliver Jay
 subtitle: I'm a Software Developer
 ---
 
-I'm a highly skilled and accomplished Computer Science graduate with experience in data analysis and software development, as well as proficiency in programming languages such as JavaScript, C, and Python. Possess strong problem-solving and team working abilities, with exceptional presentation skills. Passionate about machine learning and interested in a range of technologies, including AI, cloud computing, and encryption.
+I'm a highly skilled and accomplished Computer Science graduate with experience in data analysis and software development, as well as proficiency in programming languages such as JavaScript, Go, and Python. Possess strong problem-solving and team working abilities, with exceptional presentation skills. Passionate about machine learning and interested in a range of technologies, including AI, cloud computing, and encryption.
 
 ### Employment History
+
+**2023 - Current Day: Unemployed/Sabbatical**
+
+After gaining valuable experience at The Curve Group, I took a deliberate gap year to focus on personal and professional development. During this time, I traveled to broaden my horizons and worked on advancing my skills in software development, particularly in areas that align with my passion for programming and cutting-edge technologies. This period of self-reflection and growth has equipped me with a stronger technical foundation and a renewed focus on pursuing opportunities in software development and programming.
+
+- Took a sabbatical to travel and see the world while still young, gaining a broader perspective on global cultures
+- Focused on self-directed learning and development in software development and programming, with a particular emphasis on Golang, Crypto and full-stack development.
+- Completed personal projects such as WebNovelClient, a full stack project explained here: https://www.oliver.tj/2024-08-16-WebNovelPlatform/
+- Used the time to deepen my expertise in technologies such as, Golang, React and CI/CD aligning my skills with my long-term career goals in software development.
 
 **2021 - 2022 (15 Months): The Curve Group (https://www.thecurvegroup.co.uk/)**
 
