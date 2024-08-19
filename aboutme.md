@@ -14,7 +14,7 @@ After gaining valuable experience at The Curve Group, I took a deliberate gap ye
 
 - Took a sabbatical to travel and see the world while still young, gaining a broader perspective on global cultures
 - Focused on self-directed learning and development in software development and programming, with a particular emphasis on Golang, Crypto and full-stack development.
-- Completed personal projects such as WebNovelClient, a full stack project explained here: https://www.oliver.tj/2024-08-16-WebNovelPlatform/
+- Completed personal projects such as WebNovelClient, a full stack project explained here: [https://www.oliver.tj/2024-08-16-WebNovelPlatform/](https://www.oliver.tj/2024-08-16-WebNovelPlatform/)
 - Used the time to deepen my expertise in technologies such as, Golang, React and CI/CD aligning my skills with my long-term career goals in software development.
 
 **2021 - 2022 (15 Months): The Curve Group (https://www.thecurvegroup.co.uk/)**
