@@ -4,10 +4,9 @@ title: Building WebNovelClient - A Full-Stack Platform for Sharing Stories
 tags: [go, javascript, api, react, ci/cd]
 comments: false
 ---
+WebNovelClient is a full-stack project designed to showcase my technical skills across various domains, including backend API development, frontend design, and CI/CD. Inspired by my passion for writing, I created this platform to enable users to share and host written works. 
 
 [**Github Link**](https://github.com/LoreviQ/WebNovelPlatform)
-
-WebNovelClient is a full-stack project designed to showcase my technical skills across various domains, including backend API development, frontend design, and CI/CD. Inspired by my passion for writing, I created this platform to enable users to share and host written works. 
 
 You can explore a live demo of the project here: [https://webnovelclient-y5hewbdc4a-nw.a.run.app/](https://webnovelclient-y5hewbdc4a-nw.a.run.app/). 
 
