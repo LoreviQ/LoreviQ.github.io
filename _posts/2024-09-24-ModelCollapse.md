@@ -1,11 +1,9 @@
 ---
 layout: post
-title: Simulating Model Collapse in AI - A Personal Project
+title: Exploring Model Collapse with Python  
 tags: [python, ai, data anlaysis]
 comments: false
----
-# Exploring Model Collapse in AI: A Deep Dive into Sentiment Analysis  
-
+--- 
 In recent years, AI has reshaped industries by generating content faster than ever before—but there's a hidden risk that could undermine its power: what happens when AIs train on their own outputs? This was the core question behind my latest project.
 
 In this project, I explored the critical issue of model collapse—the deterioration of AI models when they are repeatedly trained on data they themselves generate. Focusing on sentiment analysis using Amazon reviews, I investigated how AI models perform when exposed to progressively generated data. Reviews were categorized as either positive (4-5 stars) or negative (1-2 stars), with 3-star reviews intentionally excluded to simplify the classification task and sharpen the focus on model performance.
@@ -26,7 +24,7 @@ I began by developing a sentiment classification AI, testing it across various d
 **Why Sentiment Analysis?**  
 Sentiment analysis is a practical and well-documented AI application, making it ideal for testing model robustness. By focusing on Amazon reviews, I had access to a large, diverse dataset, and excluding 3-star reviews allowed me to simplify the analysis into clearer extremes: positive or negative sentiment.
 
-!(https://oliver.tj/assets/img/ModelCollapseGraphs/CollapseRates.png)
+![Baseline Performance at different training sample sizes](https://oliver.tj/assets/img/ModelCollapseGraphs/Score-SampleSize.png)
 
 ## Step 2: Simulating a Total Collapse Scenario  
 
