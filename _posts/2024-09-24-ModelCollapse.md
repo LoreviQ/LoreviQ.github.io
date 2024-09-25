@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Exploring the Dangers of Model Collapse - A Deep Dive with Python
-tags: [python, ai, data anlaysis]
+tags: [python, ai, data analysis, machine learning, nlp]
 comments: false
 --- 
 In a world where AI is revolutionizing industries, a hidden threat looms. What happens when AI learns from its own mistakes? In this project, I explored the phenomenon of 'model collapse', where AI models deteriorate when trained on their own outputs, a situation that could affect industries from e-commerce to finance.
