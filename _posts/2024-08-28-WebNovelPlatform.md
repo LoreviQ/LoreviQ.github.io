@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Building WebNovelClient - A Full-Stack Platform for Sharing Stories
+redirect_from:
+  - /2024-08-16-WebNovelPlatform
 tags: [go, javascript, api, react, ci/cd]
 comments: false
 ---
