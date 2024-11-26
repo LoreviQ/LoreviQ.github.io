@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Building IDentify - A Prize Winning Solana Wallet Network Explorer
-tags: [python, ai, data analysis, machine learning, nlp]
+tags: [python, crypto, data analysis, hackathon]
 comments: false
 --- 
 
